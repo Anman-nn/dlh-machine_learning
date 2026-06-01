@@ -1,5 +1,5 @@
 -- 4-best_score.sql
 SELECT score, name 
 FROM second_table
-WHERE score >= 10;
-SORT 1 desc
+WHERE score >= 10
+ORDER BY 1 desc;
