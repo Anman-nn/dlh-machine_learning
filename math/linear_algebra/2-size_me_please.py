@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Documentatio of the module"""
 
+
 def matrix_shape(matrix):
     """Returns the sixe of any dimentional matrix"""
     x = []
