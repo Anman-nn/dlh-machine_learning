@@ -5,7 +5,7 @@
 def cat_matrices2D(mat1, mat2, axis=0):
     """sjkdhkjsdhfdsjkhf"""
     res = mat1.copy()
-    if axis == 0:    
+    if axis == 0:
         for row_m2 in mat2:
             if len(row_m2) != len(res[0]):
                 return None
