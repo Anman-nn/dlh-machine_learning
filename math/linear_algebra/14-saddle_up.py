@@ -3,6 +3,6 @@
 
 
 def np_matmul(mat1, mat2):
-    '''matrix multiplication is now super easy'''
+    """documentation function"""
     import numpy as np
-    return mat1 @ mat2
+    return np.matmul(mat1, mat2)
