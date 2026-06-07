@@ -17,8 +17,8 @@ def mat_mul(mat1, mat2):
     res_mat = []
 
     for row1 in mat1:
-      res_row = []
-      for row2 in trans_mat2:
-        res_row.append(sum([a * b for a, b in zip(row1, row2)]))
-      res_mat.append(res_row)
+        res_row = []
+        for row2 in trans_mat2:
+            res_row.append(sum([a * b for a, b in zip(row1, row2)]))
+        res_mat.append(res_row)
     return res_mat
