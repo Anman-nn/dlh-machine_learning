@@ -24,12 +24,20 @@ def minor(matrix):
     if len(matrix[0]) == 1:
         return [[1]]
     
-    n = matrix.shape[0]
-    minors = np.zeros((n, n))
+    n = len(matrix)
+    minors = []
 
     for i in range(n):
+        row = []
+
         for j in range(n):
-            submatrix = np.delete(np.delete(matrix, i, axis=0), j, axis=1)
-            minors[i, j] = round(np.linalg.det(submatrix))
+            submatrix = [
+                [value for col_index, value in enumerate(r) if col_index != j]
+                for row_index, r in enumerate(matrix) if row_index != i
+            ]
+
+            row.append(int(round(np.linalg.det(submatrix))))
+
+        minors.append(row)
 
     return minors
