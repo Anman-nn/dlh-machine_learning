@@ -14,12 +14,11 @@ def determinant(matrix):
     if not isinstance(matrix, list):
         raise TypeError('matrix must be a list of lists\nmatrix must be a list of lists\nmatrix must be a list of lists')
 
-    mat = np.asarray(matrix)
+    if any(len(row) != len(matrix) for row in matrix):
+        raise ValueError("matrix must be a square matrix")
 
+    mat = np.asarray(matrix)
     if mat.ndim != 2:
         raise TypeError('matrix must be a list of lists')
-
-    if not all(len(row) == len(matrix) for row in matrix):
-        raise ValueError("matrix must be a square matrix")
 
     return round(np.linalg.det(mat))
