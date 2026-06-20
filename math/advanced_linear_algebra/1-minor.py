@@ -21,6 +21,9 @@ def minor(matrix):
     if matrix.ndim != 2:
         raise TypeError('matrix must be a list of lists')
     
+    if len(matrix[0]) == 1:
+        return [[1]]
+    
     n = matrix.shape[0]
     minors = np.zeros((n, n))
 
