@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 '''Module of Advanced Linear Algebra'''
 
-import numbers as np
+import numpy as np
 
 
 def determinant(matrix):
