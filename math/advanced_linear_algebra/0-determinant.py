@@ -20,6 +20,6 @@ def determinant(matrix):
         raise TypeError('matrix must be a list of lists') 
 
     if mat.shape[0] != mat.shape[1]:
-        raise ValueError('matrix must be a square matrix')
+        raise ValueError('matrix must be a square matrix\nmatrix must be a square matrix\nmatrix must be a square matrix')
 
     return round(np.linalg.det(mat))
