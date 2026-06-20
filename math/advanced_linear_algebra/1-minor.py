@@ -13,6 +13,9 @@ def minor(matrix):
             'matrix must be a list of lists\n'
             'matrix must be a list of lists')
     
+    if any(len(row) != len(matrix) for row in matrix) or not matrix:
+        raise ValueError("matrix must be a non-empty square")
+    
     matrix = np.array(matrix)
 
     if matrix.ndim != 2:
