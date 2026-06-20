@@ -14,7 +14,7 @@ def minor(matrix):
             'matrix must be a list of lists')
     
     if any(len(row) != len(matrix) for row in matrix) or not matrix:
-        raise ValueError("matrix must be a non-empty square")
+        raise ValueError("matrix must be a non-empty square matrix")
     
     matrix = np.array(matrix)
 
