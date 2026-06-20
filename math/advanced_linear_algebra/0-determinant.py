@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 '''Module of Advanced Linear Algebra'''
 
-import numpy as np
 
 
 def determinant(matrix):
     '''calculates the determinant of a matrix'''
+
+    import numpy as np
 
     if matrix == [[]]:
         return 1
