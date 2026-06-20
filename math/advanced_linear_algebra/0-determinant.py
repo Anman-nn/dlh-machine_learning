@@ -17,9 +17,9 @@ def determinant(matrix):
     mat = np.asarray(matrix)
 
     if mat.ndim != 2:
-        raise TypeError('matrix must be a list of lists') 
+        raise TypeError('matrix must be a list of lists')
 
-    if mat.shape[0] != mat.shape[1]:
-        raise ValueError('matrix must be a square matrix\nmatrix must be a square matrix\nmatrix must be a square matrix')
+    if not all(len(row) == len(matrix) for row in matrix):
+        raise ValueError("matrix must be a square matrix")
 
     return round(np.linalg.det(mat))
