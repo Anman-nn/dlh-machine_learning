@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 '''Module of Advanced Linear Algebra'''
 
+
 def cofactor(matrix):
     '''def cofactor(matrix):'''
 
