@@ -15,11 +15,14 @@ def inverse(matrix):
 
     if any(len(row) != len(matrix) for row in matrix) or not matrix:
         raise ValueError("matrix must be a non-empty square matrix")
-    
-    if len(matrix[0]) == 1:
-        return [[1]]
-    
+
     matrix = np.array(matrix)
+
+    if len(matrix[0]) == 1:
+        cofactors = np.array([[1]])
+        inv_mat = np.round(np.transpose(cofactors) / det)
+        return inv_mat.tolist()
+
     if matrix.ndim != 2:
         raise TypeError('matrix must be a list of lists')
 
