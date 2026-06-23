@@ -22,4 +22,16 @@ def adjugate(matrix):
     if len(matrix[0]) == 1:
         return [[1]]
 
-    return np.transpose(matrix)
+    n = matrix.shape[0]
+    cofactors = []
+
+    for i in range(n):
+        row = []
+
+        for j in range(n):
+            submatrix = np.delete(np.delete(matrix, i, axis=0), j, axis=1)
+            minor_det = round(np.linalg.det(submatrix))
+            row.append(((-1) ** (i + j)) * int(minor_det))
+
+        cofactors.append(row)
+    return np.transpose(cofactors)
