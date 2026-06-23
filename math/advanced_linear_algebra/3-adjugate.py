@@ -34,4 +34,4 @@ def adjugate(matrix):
             row.append(((-1) ** (i + j)) * int(minor_det))
 
         cofactors.append(row)
-    return np.transpose(cofactors)
+    return np.transpose(cofactors).tolist()
