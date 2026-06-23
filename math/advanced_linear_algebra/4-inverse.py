@@ -41,5 +41,5 @@ def inverse(matrix):
     if det == 0:
         return None
 
-    inv_mat = np.transpose(cofactors) / det
+    inv_mat = np.round(np.transpose(cofactors) / det)
     return inv_mat.tolist()
