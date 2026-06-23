@@ -22,4 +22,4 @@ def adjugate(matrix):
     if len(matrix[0]) == 1:
         return [[1]]
 
-    return matrix.T
+    return np.transpose(matrix)
