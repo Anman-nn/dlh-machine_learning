@@ -20,7 +20,7 @@ def inverse(matrix):
 
     if len(matrix[0]) == 1:
         cofactors = np.array([[1]])
-        inv_mat = np.round(np.transpose(cofactors) / det)
+        inv_mat = np.transpose(cofactors) / int(round(np.linalg.det(matrix)))
         return inv_mat.tolist()
 
     if matrix.ndim != 2:
@@ -39,10 +39,10 @@ def inverse(matrix):
 
         cofactors.append(row)
 
-    det = np.linalg.det(matrix)
+    det = int(round(np.linalg.det(matrix)))
 
     if det == 0:
         return None
 
-    inv_mat = np.round(np.transpose(cofactors) / det)
+    inv_mat = np.transpose(cofactors) / det
     return inv_mat.tolist()
