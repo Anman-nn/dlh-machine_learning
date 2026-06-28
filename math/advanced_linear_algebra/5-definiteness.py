@@ -17,7 +17,7 @@ def definiteness(matrix):
     eigenvalues = np.linalg.eigvalsh(matrix)
     if np.all(eigenvalues > 0):
         return 'Positive definite'
-    elif np.any(eigenvalues >= 0):
+    elif not np.any(eigenvalues < 0) and np.any.isclose(eigenvalues, 0):
         return 'Positive semi-definite'
     elif np.all(eigenvalues < 0):
         return 'Negative definite'
