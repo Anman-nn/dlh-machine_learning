@@ -2,10 +2,12 @@
 '''Module for project Calculus'''
 
 
-def poly_integral(poly, C = 0):
+def poly_integral(poly, C=0):
     '''poly integral'''
     if not isinstance(poly, list):
         return None
+    if poly == [0]:
+        return [C]
 
     res = [C]
     for i in range(len(poly)):
