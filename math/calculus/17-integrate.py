@@ -9,6 +9,6 @@ def poly_integral(poly, C = 0):
 
     res = [C]
     for i in range(len(poly)):
-        res.append(poly[i]/(i+1))
+        res.append(int(poly[i]/(i+1)))
 
     return res
