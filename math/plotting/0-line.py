@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
+'''Draw a line'''
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 def line():
+    '''Function line'''
 
     y = np.arange(0, 11) ** 3
     plt.figure(figsize=(6.4, 4.8))
