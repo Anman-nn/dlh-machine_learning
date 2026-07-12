@@ -45,7 +45,7 @@ def all_in_one():
     ax2.set_ylabel('Weight (lbs)')
     ax2.set_title('''Men's Height vs Weight''')
     # Plot 3
-    ax3.plot(x, y)
+    ax3.plot(x2, y2)
     ax3.set_xlabel('Time (years)')
     ax3.set_ylabel('Fraction Remaining')
     ax3.set_title('Exponential Decay of C-14')
@@ -75,7 +75,7 @@ def all_in_one():
         ax.title.set_fontsize("x-small")
         ax.xaxis.label.set_fontsize("x-small")
         ax.yaxis.label.set_fontsize("x-small")
- 
+
     fig.suptitle("All in one")
     plt.tight_layout()
     plt.show()
