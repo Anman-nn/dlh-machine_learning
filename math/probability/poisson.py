@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 '''Module for the project Probability'''
 
-import math
 
 
 class Poisson:
     '''Define a class Poisson'''
 
+    import math
     def __init__(self, data=None, lambtha=1.):
         if data is None:
             if lambtha <= 0:
