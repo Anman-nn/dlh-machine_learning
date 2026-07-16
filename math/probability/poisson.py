@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 '''Module for the project Probability'''
 
+
 class Poisson:
     '''Define a class Poisson'''
 
