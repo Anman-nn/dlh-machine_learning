@@ -2,11 +2,9 @@
 '''Module for the project Probability'''
 
 
-
 class Poisson:
     '''Define a class Poisson'''
 
-    import math
     def __init__(self, data=None, lambtha=1.):
         if data is None:
             if lambtha <= 0:
@@ -25,5 +23,7 @@ class Poisson:
             k = int(k)
         if k <0:
             return 0
-
-        return (self.lambtha ** k) * (2.7182818285 ** (-self.lambtha)) / math.factorial(k)
+        fact = 1
+        for i in range(1, k + 1):
+            fact *= i
+        return (self.lambtha ** k) * (2.7182818285 ** (-self.lambtha)) / fact
