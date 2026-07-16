@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 '''Module for the project Probability'''
 
+import math
+
 
 class Poisson:
     '''Define a class Poisson'''
@@ -16,3 +18,12 @@ class Poisson:
             if len(data) < 2:
                 raise ValueError('data must contain multiple values')
             self.lambtha = float(sum(data) / len(data))
+
+    def pmf(self, k):
+        '''Calculate the PMF for a given number of successes'''
+        if not isinstance(k, int):
+            k = int(k)
+        if k <0:
+            return 0
+
+        return (self.lambtha ** k) * (2.7182818285 ** (-self.lambtha)) / math.factorial(k)
