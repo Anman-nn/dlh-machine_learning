@@ -21,7 +21,7 @@ class Poisson:
         '''Calculate the PMF for a given number of successes'''
         if not isinstance(k, int):
             k = int(k)
-        if k <0:
+        if k < 0:
             return 0
         fact = 1
         for i in range(1, k + 1):
