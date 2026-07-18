@@ -27,6 +27,7 @@ class Poisson:
         for i in range(1, k + 1):
             fact *= i
         return (self.lambtha ** k) * (2.7182818285 ** (-self.lambtha)) / fact
+
     def cdf(self, k):
         '''calculates CDF'''
         k = int(k)
