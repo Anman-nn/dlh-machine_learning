@@ -19,7 +19,7 @@ class Exponential:
 
     def pdf(self, x):
         '''Calculate the PDF for a given time period'''
-        if k < 0:
+        if x < 0:
             return 0
 
         return 1 - 2.7182818285 ** ((-self.lambtha) * x)
