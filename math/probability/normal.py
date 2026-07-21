@@ -11,7 +11,7 @@ class Normal:
         if stddev <= 0:
             raise ValueError('stddev must be a positive value')
         if data is None:
-            return (mean, stddev)
+            return None
         if not isinstance(data, list):
             raise TypeError('data must be a list')
 
