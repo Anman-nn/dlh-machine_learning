@@ -36,5 +36,5 @@ class Normal:
         z = self.z_score(x)
         e = 2.7182818285
         pi = 3.1415926536
-        pdf = (1 / ((2 * pi) ** 0.5)) * (e ** (-(z ** 2) / 2)) / 2
+        pdf = (1 / (self.stddev * ((2 * pi) ** 0.5))) * (e ** (-(z ** 2) / 2))
         return pdf
