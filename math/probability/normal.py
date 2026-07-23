@@ -24,7 +24,9 @@ class Normal:
             self.stddev = variance ** 0.5
 
     def z_score(self, x):
+        '''returns z-score of x'''
         return float((x - self.mean) / self.stddev)
 
     def x_value(self, z):
+        '''returns x of z-score'''
         return z * self.stddev + self.mean
