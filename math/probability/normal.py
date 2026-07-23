@@ -27,4 +27,4 @@ class Normal:
         return float((x - self.mean) / self.stddev)
     
     def x_value(self, z):
-        return x * self.stddev + self.mean
+        return z * self.stddev + self.mean
