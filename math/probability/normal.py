@@ -54,4 +54,3 @@ class Normal:
         )
 
         return (1 + erf) / 2
-    
