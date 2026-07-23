@@ -25,7 +25,7 @@ class Normal:
 
     def z_score(self, x):
         '''returns z-score of x'''
-        return float((x - self.mean) / self.stddev)
+        return (x - self.mean) / self.stddev
 
     def x_value(self, z):
         '''returns x of z-score'''
