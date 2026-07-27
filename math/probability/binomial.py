@@ -29,8 +29,10 @@ class Binomial:
             p = mean / n
             self.n = int(n)
             self.p = float(p)
+
     def pmf(self, k):
         '''Calculates the value of the PMF'''
+
         k = int(k)
 
         if k < 0 or k > self.n:
@@ -47,4 +49,3 @@ class Binomial:
         )
 
         return combination * (self.p ** k) * ((1 - self.p) ** (self.n - k))
-        
