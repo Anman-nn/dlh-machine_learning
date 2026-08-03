@@ -2,10 +2,10 @@
 '''Module for the bayesian Probability'''
 
 
-import math
 import numpy as np
 
 def likelihood(x, n, P):
+    import math
     if not isinstance(n, int) or n <= 0:
         raise ValueError("n must be a positive integer")
 
