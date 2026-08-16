@@ -6,8 +6,8 @@ import numpy as np
 
 def mean_cov(X):
     '''function documented'''
-    #if not isinstance(X, np.ndarray) or X.ndim != 2:
-       # raise TypeError("X must be a 2D numpy.ndarray")
+    if not isinstance(X, np.ndarray) or X.ndim != 2:
+        raise TypeError("X must be a 2D numpy.ndarray")
 
     n = X.shape[0]
 
