@@ -3,5 +3,6 @@
 
 
 def array(df):
-    last10 = df.iloc[-10:]
+    '''def array(df)'''
+    last10 = df[['High', 'Close']].iloc[-10:]
     return last10.to_numpy()
