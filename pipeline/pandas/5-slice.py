@@ -4,5 +4,5 @@
 
 def slice(df):
     '''function documentation'''
-    rows = [i for i in range(1, df.shape[0]) if i%60 == 0]
+    rows = [i for i in range(1, df.shape[0]) if i % 60 == 0]
     return df[['High', 'Low', 'Close', 'Volume_(BTC)']].loc[rows]
