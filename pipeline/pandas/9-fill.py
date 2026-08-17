@@ -4,7 +4,7 @@
 
 def fill(df):
     '''def fill(df):'''
-    df1=df.drop(columns=['Weighted_Price'])
+    df1 = df.drop(columns=['Weighted_Price'])
     df1['Close'] = df1['Close'].ffill()
     df1["High"] = df1["High"].fillna(df1["Close"])
     df1["Low"] = df1["Low"].fillna(df1["Close"])
