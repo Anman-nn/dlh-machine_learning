@@ -15,4 +15,4 @@ def concat(df1, df2):
 
 def hierarchy(df1, df2):
      newdf = concat(df1, df2)
-     newdf = newdf.swaplevel(0, 1).sort_index()
+     return newdf.swaplevel(0, 1).sort_index()
