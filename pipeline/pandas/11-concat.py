@@ -13,4 +13,4 @@ def concat(df1, df2):
     return pd.concat([i_df2, i_df1],
                      axis=0,
                      keys=['bitstamp', 'coinbase']
-                    )
+    )
