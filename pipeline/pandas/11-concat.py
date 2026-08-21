@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 '''Module Pandas is the best!!!'''
 
+import pandas as pd
 
 def concat(df1, df2):
     '''dsfsdfdsfsdf'''
-    import pandas as pd
     index = __import__('10-index').index
     i_df1 = index(df1)
     i_df2 = index(df2)
@@ -13,4 +13,3 @@ def concat(df1, df2):
                      axis=0,
                      keys=['bitstamp', 'coinbase']
     )
-
