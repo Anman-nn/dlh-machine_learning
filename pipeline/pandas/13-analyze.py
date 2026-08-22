@@ -3,4 +3,5 @@
 
 
 def analyze(df):
+    '''Descriptive statistics'''
     return df.drop(columns=['Timestamp']).describe()
